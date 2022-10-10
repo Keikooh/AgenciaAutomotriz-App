@@ -24,5 +24,10 @@ namespace AccesoAgencia
             return con.ObtenerDato(string.Format("SELECT permitidos FROM permisos WHERE fkidusuario = {0} AND fkidFormulario = {1}", usuario.idusuario, formulario)) ;
         }
 
+        public dynamic ObtenerNombre(Usuario usuario)
+        {
+            return con.ObtenerDato(String.Format("SELECT nombre FROM usuarios WHERE idusuario = {0}", usuario.idusuario));
+        }
+
     }
 }
