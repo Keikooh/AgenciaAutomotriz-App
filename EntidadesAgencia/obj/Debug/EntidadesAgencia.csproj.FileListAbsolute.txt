@@ -1,0 +1,6 @@
+C:\Users\fergz\source\repos\PresentacionAgencia\EntidadesAgencia\bin\Debug\EntidadesAgencia.dll
+C:\Users\fergz\source\repos\PresentacionAgencia\EntidadesAgencia\bin\Debug\EntidadesAgencia.pdb
+C:\Users\fergz\source\repos\PresentacionAgencia\EntidadesAgencia\obj\Debug\EntidadesAgencia.csproj.AssemblyReference.cache
+C:\Users\fergz\source\repos\PresentacionAgencia\EntidadesAgencia\obj\Debug\EntidadesAgencia.csproj.CoreCompileInputs.cache
+C:\Users\fergz\source\repos\PresentacionAgencia\EntidadesAgencia\obj\Debug\EntidadesAgencia.dll
+C:\Users\fergz\source\repos\PresentacionAgencia\EntidadesAgencia\obj\Debug\EntidadesAgencia.pdb
