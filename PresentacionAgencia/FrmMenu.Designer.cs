@@ -44,6 +44,7 @@
             this.btnProducto.TabIndex = 1;
             this.btnProducto.Text = "Productos";
             this.btnProducto.UseVisualStyleBackColor = false;
+            this.btnProducto.Click += new System.EventHandler(this.btnProducto_Click);
             // 
             // btnHerramienta
             // 
@@ -57,6 +58,7 @@
             this.btnHerramienta.TabIndex = 2;
             this.btnHerramienta.Text = "Herramientas";
             this.btnHerramienta.UseVisualStyleBackColor = false;
+            this.btnHerramienta.Click += new System.EventHandler(this.btnHerramienta_Click);
             // 
             // FrmMenu
             // 
@@ -70,7 +72,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmMenu";
+            this.Text = "Menu";
             this.ResumeLayout(false);
 
         }

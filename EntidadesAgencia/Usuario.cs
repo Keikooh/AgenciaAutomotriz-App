@@ -8,13 +8,13 @@ namespace EntidadesAgencia
 {
     public class Usuario
     {
-        public Usuario(string nickname, string password)
+        public Usuario(int idusuario, string password)
         {
-            this.nickname = nickname;
+            this.idusuario = idusuario;
             this.password = password;
         }
 
-        public string nickname { get; set; }
+        public int idusuario { get; set; }
         public string password { get; set; }
     }
     

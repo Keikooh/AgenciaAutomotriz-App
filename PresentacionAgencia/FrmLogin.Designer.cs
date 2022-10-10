@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnOk = new System.Windows.Forms.Button();
-            this.txtNickname = new System.Windows.Forms.TextBox();
+            this.txtIdUsuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,20 +50,20 @@
             this.btnOk.UseVisualStyleBackColor = false;
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
-            // txtNickname
+            // txtIdUsuario
             // 
-            this.txtNickname.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtIdUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNickname.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.txtNickname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNickname.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNickname.ForeColor = System.Drawing.Color.DimGray;
-            this.txtNickname.Location = new System.Drawing.Point(193, 215);
-            this.txtNickname.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtNickname.Name = "txtNickname";
-            this.txtNickname.Size = new System.Drawing.Size(350, 34);
-            this.txtNickname.TabIndex = 1;
+            this.txtIdUsuario.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.txtIdUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtIdUsuario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdUsuario.ForeColor = System.Drawing.Color.DimGray;
+            this.txtIdUsuario.Location = new System.Drawing.Point(193, 215);
+            this.txtIdUsuario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtIdUsuario.Name = "txtIdUsuario";
+            this.txtIdUsuario.Size = new System.Drawing.Size(350, 34);
+            this.txtIdUsuario.TabIndex = 1;
             // 
             // label1
             // 
@@ -73,9 +73,9 @@
             this.label1.Location = new System.Drawing.Point(188, 173);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 28);
+            this.label1.Size = new System.Drawing.Size(98, 28);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Nickname";
+            this.label1.Text = "Id usuario";
             // 
             // txtPassword
             // 
@@ -126,7 +126,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtNickname);
+            this.Controls.Add(this.txtIdUsuario);
             this.Controls.Add(this.btnOk);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -141,7 +141,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnOk;
-        private System.Windows.Forms.TextBox txtNickname;
+        private System.Windows.Forms.TextBox txtIdUsuario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label2;

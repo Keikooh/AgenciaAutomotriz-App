@@ -18,5 +18,10 @@ namespace ManejadorAgencia
         {
             return au.VerificarUsuario(usuario);
         }
+
+        public dynamic VerificarPermisos(Usuario usuario, int formulario)
+        {
+            return au.VerificarPermisos(usuario, formulario);
+        }
     }
 }

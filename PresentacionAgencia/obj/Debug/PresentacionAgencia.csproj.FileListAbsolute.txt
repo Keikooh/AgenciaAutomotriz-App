@@ -30,3 +30,5 @@ C:\Users\fergz\source\repos\PresentacionAgencia\PresentacionAgencia\obj\Debug\Pr
 C:\Users\fergz\source\repos\PresentacionAgencia\PresentacionAgencia\bin\Debug\ConectarBase.dll
 C:\Users\fergz\source\repos\PresentacionAgencia\PresentacionAgencia\bin\Debug\ConectarBase.pdb
 C:\Users\fergz\source\repos\PresentacionAgencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmMenu.resources
+C:\Users\fergz\source\repos\PresentacionAgencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmHerramientas.resources
+C:\Users\fergz\source\repos\PresentacionAgencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmProductos.resources

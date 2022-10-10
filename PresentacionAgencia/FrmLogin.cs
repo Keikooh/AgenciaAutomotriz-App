@@ -16,6 +16,9 @@ namespace PresentacionAgencia
     public partial class FrmLogin : Form
     {
         ManejadorUsuario mu;
+
+        public static Usuario user = new Usuario(0,"");
+
         public FrmLogin()
         {
             mu = new ManejadorUsuario();
@@ -24,13 +27,16 @@ namespace PresentacionAgencia
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            if ( mu.VerificarUsuario(new Usuario(txtNickname.Text, txtPassword.Text)) != null)
+            user.idusuario = int.Parse(txtIdUsuario.Text);
+            user.password = txtPassword.Text;
+
+            if ( mu.VerificarUsuario( user ) != null)
             {
                 FrmMenu fm = new FrmMenu();
                 fm.ShowDialog();
             }
             else
-                MessageBox.Show("USUARIO NO ENCONTRADO");
+                MessageBox.Show("USUARIO NO ENCONTRADO","ERROR");
             
         }
     }
