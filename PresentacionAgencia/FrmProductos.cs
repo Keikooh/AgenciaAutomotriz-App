@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using ManejadorAgencia;
+using EntidadesAgencia;
 
 namespace PresentacionAgencia
 {
@@ -16,6 +17,9 @@ namespace PresentacionAgencia
     {
         ManejadorUsuario mu;
         ManejadorProductos mp;
+        public static Productos producto = new Productos(0, "", "", "");
+
+        int fila = 0, columna = 0;  
 
         public FrmProductos()
         {
@@ -46,6 +50,42 @@ namespace PresentacionAgencia
         {
             Actualizar();
         }
+
+        
+
+        private void dtgProductos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            producto.codigoBarras = int.Parse(dtgProductos.Rows[fila].Cells[0].Value.ToString());
+            producto.nombre = dtgProductos.Rows[fila].Cells[1].Value.ToString();
+            producto.descripcion = dtgProductos.Rows[fila].Cells[2].Value.ToString();
+            producto.marca = dtgProductos.Rows[fila].Cells[3].Value.ToString();
+
+            switch (columna)
+            {
+                case 4: { 
+                        
+                        DialogResult dr = MessageBox.Show(
+                            String.Format("Desea eliminar '{0}'", producto.nombre),
+                            "ATENCION",
+                            MessageBoxButtons.YesNo); 
+
+                        if (dr == DialogResult.Yes)
+                            mp.Borrar(producto);
+
+                        Actualizar();
+
+                    } break;
+
+                case 5: { } break;
+            }
+        }
+
+        private void dtgProductos_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            fila = e.RowIndex;
+            columna = e.ColumnIndex;
+        }
+
 
         void Actualizar()
         {

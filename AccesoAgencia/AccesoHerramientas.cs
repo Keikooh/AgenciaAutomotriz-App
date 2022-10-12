@@ -15,7 +15,7 @@ namespace AccesoAgencia
 
         public void Borrar(dynamic entidad)
         {
-            
+            con.EjecutarComando(String.Format("DELETE FROM herramientas WHERE codigoHerramientas = {0}", entidad.codigoHerramientas));
         }
 
         public void Guardar(dynamic entidad)

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using ManejadorAgencia;
+using EntidadesAgencia;
 
 namespace PresentacionAgencia
 {
@@ -16,6 +17,11 @@ namespace PresentacionAgencia
     {
         ManejadorUsuario mu;
         ManejadorHerramientas mh;
+
+        int fila = 0, columna = 0;
+
+        Herramientas herramienta = new Herramientas(0, "", "", "");
+
         public FrmHerramientas()
         {
             mu = new ManejadorUsuario();
@@ -52,6 +58,41 @@ namespace PresentacionAgencia
                 FrmMenu.permisos.Contains("d") ? true : false,
                 FrmMenu.permisos.Contains("u") ? true : false
                 );
+        }
+
+        private void dtgProductos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            herramienta.codigoHerramientas = int.Parse(dtgProductos.Rows[fila].Cells[0].Value.ToString());
+            herramienta.nombre = dtgProductos.Rows[fila].Cells[1].Value.ToString();
+            herramienta.medida = dtgProductos.Rows[fila].Cells[2].Value.ToString();
+            herramienta.marca = dtgProductos.Rows[fila].Cells[3].Value.ToString();
+
+            switch (columna)
+            {
+                case 4:
+                    {
+
+                        DialogResult dr = MessageBox.Show(
+                            String.Format("Desea eliminar '{0}'", herramienta.nombre),
+                            "ATENCION",
+                            MessageBoxButtons.YesNo);
+
+                        if (dr == DialogResult.Yes)
+                            mh.Borrar( herramienta );
+
+                        Actualizar();
+
+                    }
+                    break;
+
+                case 5: { } break;
+            }
+        }
+
+        private void dtgProductos_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            fila = e.RowIndex;
+            columna = e.ColumnIndex;
         }
     }
 }

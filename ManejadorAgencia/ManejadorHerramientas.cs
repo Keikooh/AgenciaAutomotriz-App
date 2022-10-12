@@ -22,6 +22,11 @@ namespace ManejadorAgencia
             ah.Guardar(herramienta);
         }
 
+        public void Borrar(Herramientas herramienta)
+        {
+            ah.Borrar(herramienta);
+        }
+
         public void Mostrar( string filtro, DataGridView tabla, Boolean eliminacion, Boolean actualizacion)
         {
             tabla.Columns.Clear();
