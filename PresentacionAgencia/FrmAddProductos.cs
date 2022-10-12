@@ -24,11 +24,30 @@ namespace PresentacionAgencia
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            mp.Guardar(new Productos( 0,txtNombre.Text, txtDescripcion.Text, txtMarca.Text ));
+            if(FrmProductos.estado == "actualizando")
+            {
+                mp.Editar(new Productos(FrmProductos.producto.codigoBarras, txtNombre.Text, txtDescripcion.Text, txtMarca.Text));
+                MessageBox.Show("PRODUCTO ACTUALIZADO");
+            }
 
-            MessageBox.Show("PRODUCTO AGREGADO");
+
+            else
+            {
+                mp.Guardar(new Productos(0, txtNombre.Text, txtDescripcion.Text, txtMarca.Text));
+                MessageBox.Show("PRODUCTO AGREGADO");
+            }
 
             Close();
+        }
+
+        private void FrmAddProductos_Load(object sender, EventArgs e)
+        {
+            if(FrmProductos.estado == "actualizando")
+            {
+                txtNombre.Text = FrmProductos.producto.nombre;
+                txtDescripcion.Text = FrmProductos.producto.descripcion;
+                txtMarca.Text = FrmProductos.producto.marca;
+            }
         }
     }
 }

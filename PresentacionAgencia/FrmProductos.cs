@@ -19,7 +19,9 @@ namespace PresentacionAgencia
         ManejadorProductos mp;
         public static Productos producto = new Productos(0, "", "", "");
 
-        int fila = 0, columna = 0;  
+        int fila = 0, columna = 0;
+
+        public static string estado = "";
 
         public FrmProductos()
         {
@@ -42,6 +44,7 @@ namespace PresentacionAgencia
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            estado = "guardando";
             FrmAddProductos fp = new FrmAddProductos();
             fp.ShowDialog();
         }
@@ -76,7 +79,14 @@ namespace PresentacionAgencia
 
                     } break;
 
-                case 5: { } break;
+                case 5: {
+                        estado = "actualizando";
+                        FrmAddProductos fp = new FrmAddProductos();
+                        fp.ShowDialog();
+
+                        Actualizar();
+
+                        } break;
             }
         }
 

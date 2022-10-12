@@ -20,7 +20,8 @@ namespace PresentacionAgencia
 
         int fila = 0, columna = 0;
 
-        Herramientas herramienta = new Herramientas(0, "", "", "");
+        public static Herramientas herramienta = new Herramientas(0, "", "", "");
+        public static string estado = "";
 
         public FrmHerramientas()
         {
@@ -42,6 +43,7 @@ namespace PresentacionAgencia
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            estado = "guardando";
             FrmAddHerramientas fh = new FrmAddHerramientas();
             fh.ShowDialog();
 
@@ -85,7 +87,15 @@ namespace PresentacionAgencia
                     }
                     break;
 
-                case 5: { } break;
+                case 5: {
+
+                        estado = "actualizando";
+                        FrmAddHerramientas fh = new FrmAddHerramientas();
+                        fh.ShowDialog();
+
+                        Actualizar();
+
+                    } break;
             }
         }
 

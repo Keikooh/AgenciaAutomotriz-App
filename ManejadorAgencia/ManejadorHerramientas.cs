@@ -22,6 +22,11 @@ namespace ManejadorAgencia
             ah.Guardar(herramienta);
         }
 
+        public void Editar(Herramientas herramienta)
+        {
+           ah.Editar(herramienta);
+        }
+
         public void Borrar(Herramientas herramienta)
         {
             ah.Borrar(herramienta);

@@ -18,6 +18,15 @@ namespace AccesoAgencia
             con.EjecutarComando(String.Format("DELETE FROM productos WHERE codigoBarras = {0}", entidad.codigoBarras));
         }
 
+        public void Editar(dynamic entidad)
+        {
+            con.EjecutarComando(String.Format("UPDATE productos SET nombre = '{0}', descripcion = '{1}', marca = '{2}' WHERE codigoBarras = {3}", 
+                entidad.nombre,
+                entidad.descripcion,
+                entidad.marca,
+                entidad.codigoBarras));
+        }
+
         public void Guardar(dynamic entidad)
         {
             con.EjecutarComando(string.Format("INSERT INTO productos VALUES (NULL,'{0}','{1}','{2}') ",

@@ -21,6 +21,11 @@ namespace ManejadorAgencia
             ap.Guardar(producto);
         }
 
+        public void Editar(Productos producto)
+        {
+            ap.Editar(producto);
+        }
+
         public void Borrar(Productos producto)
         {
             ap.Borrar(producto);

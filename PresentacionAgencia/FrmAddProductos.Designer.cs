@@ -52,7 +52,7 @@
             // 
             this.txtNombre.BackColor = System.Drawing.SystemColors.MenuBar;
             this.txtNombre.Location = new System.Drawing.Point(30, 77);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(300, 26);
             this.txtNombre.TabIndex = 1;
@@ -62,7 +62,7 @@
             this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(166)))), ((int)(((byte)(155)))));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.Location = new System.Drawing.Point(30, 387);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(147, 45);
             this.btnGuardar.TabIndex = 2;
@@ -129,6 +129,7 @@
             this.Name = "FrmAddProductos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAddProductos";
+            this.Load += new System.EventHandler(this.FrmAddProductos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

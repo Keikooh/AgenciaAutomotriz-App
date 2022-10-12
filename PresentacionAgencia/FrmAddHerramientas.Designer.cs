@@ -128,6 +128,7 @@
             this.Name = "FrmAddHerramientas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAddHerramientas";
+            this.Load += new System.EventHandler(this.FrmAddHerramientas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

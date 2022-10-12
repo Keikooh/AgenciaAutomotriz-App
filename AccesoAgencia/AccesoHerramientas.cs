@@ -18,6 +18,15 @@ namespace AccesoAgencia
             con.EjecutarComando(String.Format("DELETE FROM herramientas WHERE codigoHerramientas = {0}", entidad.codigoHerramientas));
         }
 
+        public void Editar(dynamic entidad)
+        {
+            con.EjecutarComando(String.Format("UPDATE herramientas SET nombre = '{0}', medida = '{1}', marca = '{2}' WHERE codigoHerramientas = {3}",
+                entidad.nombre,
+                entidad.medida,
+                entidad.marca,
+                entidad.codigoHerramientas));
+        }
+
         public void Guardar(dynamic entidad)
         {
             con.EjecutarComando(string.Format(" INSERT INTO herramientas VALUES (NULL,'{0}','{1}','{2}') ",

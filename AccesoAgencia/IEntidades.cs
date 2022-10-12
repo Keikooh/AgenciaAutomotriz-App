@@ -11,6 +11,7 @@ namespace AccesoAgencia
     {
         void Guardar(dynamic entidad);
         void Borrar(dynamic entidad);
+        void Editar(dynamic entidad);
         DataSet Mostrar(string filtro);
 
     }
