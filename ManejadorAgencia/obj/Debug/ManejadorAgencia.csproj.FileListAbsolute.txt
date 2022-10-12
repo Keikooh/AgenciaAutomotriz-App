@@ -22,3 +22,5 @@ C:\Users\fergz\source\repos\PresentacionAgencia\ManejadorAgencia\obj\Debug\Manej
 C:\Users\fergz\source\repos\PresentacionAgencia\ManejadorAgencia\obj\Debug\ManejadorAgencia.pdb
 C:\Users\fergz\source\repos\PresentacionAgencia\ManejadorAgencia\bin\Debug\ConectarBase.dll
 C:\Users\fergz\source\repos\PresentacionAgencia\ManejadorAgencia\bin\Debug\ConectarBase.pdb
+C:\Users\fergz\source\repos\PresentacionAgencia\ManejadorAgencia\bin\Debug\Crud.dll
+C:\Users\fergz\source\repos\PresentacionAgencia\ManejadorAgencia\bin\Debug\Crud.pdb

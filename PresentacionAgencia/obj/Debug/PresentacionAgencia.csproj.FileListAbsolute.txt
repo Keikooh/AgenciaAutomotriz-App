@@ -35,3 +35,5 @@ C:\Users\fergz\source\repos\PresentacionAgencia\PresentacionAgencia\obj\Debug\Pr
 C:\Users\fergz\source\repos\PresentacionAgencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.Properties.Resources.resources
 C:\Users\fergz\source\repos\PresentacionAgencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmAddProductos.resources
 C:\Users\fergz\source\repos\PresentacionAgencia\PresentacionAgencia\obj\Debug\PresentacionAgencia.FrmAddHerramientas.resources
+C:\Users\fergz\source\repos\PresentacionAgencia\PresentacionAgencia\bin\Debug\Crud.dll
+C:\Users\fergz\source\repos\PresentacionAgencia\PresentacionAgencia\bin\Debug\Crud.pdb
